@@ -9,18 +9,47 @@
 </head>
 <body>
     <div class="tabs">
-        <div class="tabs-btn-container">
-            <button class="tab active-tab">
+        <div 
+        role="tabList"
+        aria-label="tabs component"
+        class="tabs-btn-container">
+            <button 
+            role="tab" 
+            id="tab-1"
+            aria-controls="panel-1"
+            type="button"
+            tabindex="0"
+            aria-selected="true"
+            class="tab active-tab">
                 Science 🍉
             </button>
-            <button class="tab">
+            <button
+            role="tab" 
+            id="tab-2"
+            aria-controls="panel-2"
+            type="button"
+            tabindex="-1"
+            aria-selected="false" 
+            class="tab">
                 Rocket 🚀
             </button>
-            <button class="tab">
+            <button 
+            role="tab" 
+            id="tab-3"
+            aria-controls="panel-3"
+            type="button"
+            tabindex="-1"
+            aria-selected="false"
+            class="tab">
                 Food 🍔
             </button>
         </div>
-        <div class="tab-content active-tab-content">
+        <div 
+        id="panel-1"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-1"
+        class="tab-content active-tab-content">
             <h3>Science</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad tempore ut necessitatibus! Labore rem consequuntur voluptas dignissimos dolore, excepturi animi laudantium, illum tenetur, deserunt maiores? Obcaecati expedita consequatur quibusdam!
@@ -30,7 +59,12 @@
                 Reiciendis officiis maiores maxime voluptatem, illum quod dignissimos repellat voluptatum aut quo facere, veniam natus architecto quas laboriosam cupiditate ratione nam fugit neque. Odio debitis aut ut labore sed. Illo?
             </p>
         </div>
-        <div class="tab-content">
+        <div 
+        id="panel-2"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-2"
+        class="tab-content">
             <h3>Science</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad tempore ut necessitatibus! Labore rem consequuntur voluptas dignissimos dolore, excepturi animi laudantium, illum tenetur, deserunt maiores? Obcaecati expedita consequatur quibusdam!
@@ -39,7 +73,12 @@
                 Corporis ducimus dolorem architecto vero aliquam velit quo asperiores iure eaque a ipsum quae placeat dolorum minus delectus aut odit, facere nobis natus voluptatum modi odio numquam est? Dolore, numquam.
             </p>
         </div>
-        <div class="tab-content">
+        <div 
+        id="panel-3"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-3"
+        class="tab-content">
             <h3>Science</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ad tempore ut necessitatibus! Labore rem consequuntur voluptas dignissimos dolore, excepturi animi laudantium, illum tenetur, deserunt maiores? Obcaecati expedita consequatur quibusdam!
